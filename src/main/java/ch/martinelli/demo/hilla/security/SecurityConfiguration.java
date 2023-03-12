@@ -19,10 +19,7 @@ import java.util.Base64;
 @Configuration
 public class SecurityConfiguration extends VaadinWebSecurity {
 
-    // The secret is stored in /config/secrets/application.properties by default.
-    // Never commit the secret into version control; each environment should have
-    // its own secret.
-    @Value("${com.example.application.auth.secret}")
+    @Value("${auth.secret}")
     private String authSecret;
 
     @Bean
