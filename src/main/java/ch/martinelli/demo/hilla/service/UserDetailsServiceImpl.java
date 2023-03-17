@@ -1,4 +1,4 @@
-package ch.martinelli.demo.hilla.security;
+package ch.martinelli.demo.hilla.service;
 
 import ch.martinelli.demo.hilla.entity.User;
 import ch.martinelli.demo.hilla.repository.UserRepository;
