@@ -18,13 +18,10 @@ public class Person {
     private Integer id;
     private int version;
     @Nonnull
-    @NotBlank
     private String firstName;
     @Nonnull
-    @NotBlank
     private String lastName;
     @Email
-    @Nonnull
     private String email;
     @Nonnull
     private String phone;
@@ -39,6 +36,7 @@ public class Person {
         return id;
     }
 
+    @NotBlank
     public String getFirstName() {
         return firstName;
     }
@@ -47,6 +45,7 @@ public class Person {
         this.firstName = firstName;
     }
 
+    @NotBlank
     public String getLastName() {
         return lastName;
     }
@@ -55,6 +54,7 @@ public class Person {
         this.lastName = lastName;
     }
 
+    @Email
     public String getEmail() {
         return email;
     }
