@@ -6,7 +6,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.Email;
-import org.hibernate.validator.constraints.Length;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 
 import java.time.LocalDate;
 
@@ -18,10 +19,10 @@ public class Person {
     private Integer id;
     private int version;
     @Nonnull
-    @Length(min = 3, max = 50)
+    @NotBlank
     private String firstName;
     @Nonnull
-    @Length(min = 3, max = 50)
+    @NotBlank
     private String lastName;
     @Email
     @Nonnull
