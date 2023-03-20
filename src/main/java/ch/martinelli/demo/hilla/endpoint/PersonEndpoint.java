@@ -5,11 +5,11 @@ import ch.martinelli.demo.hilla.service.PersonService;
 import dev.hilla.Endpoint;
 import dev.hilla.Nonnull;
 import dev.hilla.exception.EndpointException;
-import jakarta.annotation.security.RolesAllowed;
 import org.springframework.dao.OptimisticLockingFailureException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import javax.annotation.security.RolesAllowed;
 import java.util.Optional;
 
 @Endpoint
@@ -27,7 +27,7 @@ public class PersonEndpoint {
         return service.list(page);
     }
 
-    public Optional<Person> get(@Nonnull Long id) {
+    public Optional<Person> get(@Nonnull Integer id) {
         return service.get(id);
     }
 
@@ -40,7 +40,7 @@ public class PersonEndpoint {
         }
     }
 
-    public void delete(@Nonnull Long id) {
+    public void delete(@Nonnull Integer id) {
         service.delete(id);
     }
 

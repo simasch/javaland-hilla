@@ -18,7 +18,7 @@ public class PersonService {
         this.repository = repository;
     }
 
-    public Optional<Person> get(Long id) {
+    public Optional<Person> get(Integer id) {
         return repository.findById(id);
     }
 
@@ -26,7 +26,7 @@ public class PersonService {
         return repository.save(entity);
     }
 
-    public void delete(Long id) {
+    public void delete(Integer id) {
         repository.deleteById(id);
     }
 

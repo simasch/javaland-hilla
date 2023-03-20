@@ -29,6 +29,11 @@
       "Frontend/*": ["*"]
     }
   },
-  "include": ["frontend/**/*", "types.d.ts"],
-  "exclude": ["frontend/generated/jar-resources/**"]
+  "include": [
+    "frontend/**/*",
+    "types.d.ts"
+  ],
+  "exclude": [
+    "frontend/generated/jar-resources/**"
+  ]
 }
