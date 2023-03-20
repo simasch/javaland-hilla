@@ -27,7 +27,7 @@ public class PersonEndpoint {
         return service.list(page);
     }
 
-    public Optional<Person> get(@Nonnull Long id) {
+    public Optional<Person> get(@Nonnull Integer id) {
         return service.get(id);
     }
 
@@ -40,7 +40,7 @@ public class PersonEndpoint {
         }
     }
 
-    public void delete(@Nonnull Long id) {
+    public void delete(@Nonnull Integer id) {
         service.delete(id);
     }
 
