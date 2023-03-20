@@ -10,6 +10,9 @@ import jakarta.validation.constraints.NotBlank;
 
 import java.time.LocalDate;
 
+/**
+ * Bean Validation annotations are on the getters because of a Hilla 2 issue
+ */
 @Entity
 public class Person {
 
@@ -55,6 +58,7 @@ public class Person {
     }
 
     @Email
+    @NotBlank
     public String getEmail() {
         return email;
     }
