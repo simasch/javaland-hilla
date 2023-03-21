@@ -24,7 +24,7 @@ public class Person {
     private String firstName;
     @Nonnull
     private String lastName;
-    @Email
+    @Nonnull
     private String email;
     @Nonnull
     private String phone;
@@ -58,7 +58,6 @@ public class Person {
     }
 
     @Email
-    @NotBlank
     public String getEmail() {
         return email;
     }
